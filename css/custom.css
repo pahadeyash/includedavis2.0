@@ -134,6 +134,17 @@ animation-duration:2s;
 }
 
 /* ----- Footer -----*/
+.social-btn
+{
+  color: #FFFFFF;
+
+}
+
+.social-btn:hover
+{
+  color: #FFFFFF;
+}
+
 #page_footer
 {
   background-color: #333;
