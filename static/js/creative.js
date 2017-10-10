@@ -10,6 +10,13 @@
         event.preventDefault();
     });
 
+    // custom scroll function
+    $(document).scroll( function() {
+        var $header = $("div.header-content");
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $header.height());
+    });
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
