@@ -3,6 +3,11 @@
 	font-size: 110px;
 }
 
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
 /* ------  Typing Text -----*/
 #typed
 {
@@ -173,4 +178,5 @@ animation-duration:2s;
   color: #fff;
   font-size: 15px;
   font-weight: lighter;
+  text-decoration: none;
 }
