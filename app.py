@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 import os
 
 # create application
@@ -12,10 +12,8 @@ def home():
 def projects():
 	return render_template('projects.html')
 
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static', 'img'),
-                               'favicon.ico', mimetype='image/png')
+app.add_url_rule('/favicon.ico',
+                 redirect_to=url_for('static', filename='favicon.ico'))
 
 if __name__ == '__main__':
 	app.run()
