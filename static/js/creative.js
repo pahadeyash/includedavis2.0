@@ -12,7 +12,7 @@
 
     // custom scroll function
     $(document).scroll( function() {
-        var $header = $("div.header-content");
+        var $header = $("header");
         var $nav = $(".navbar-fixed-top");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $header.height());
     });
