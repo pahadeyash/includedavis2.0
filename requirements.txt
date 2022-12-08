@@ -4,7 +4,7 @@ click==6.7
 itsdangerous==0.24
 gunicorn==19.7.1
 requests==2.18.4
-certifi==2017.7.27.1
+certifi==2022.12.7
 chardet==3.0.4
 idna==2.6
 urllib3==1.22
